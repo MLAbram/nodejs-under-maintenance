@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Under Maintenance</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 40px 60px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 90%;
+        }
+
+        h1 {
+            color: #ff9800; /* Orange color for emphasis */
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .gif-placeholder {
+            margin: 30px 0;
+        }
+
+        .gif-placeholder img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            border: 2px solid #ddd;
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #888;
+        }
+    </style>
+	
+	<!-- Matomo -->
+	<script>
+	  var _paq = window._paq = window._paq || [];
+	  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+	  _paq.push(['trackPageView']);
+	  _paq.push(['enableLinkTracking']);
+	  (function() {
+		var u="https://mlabram.net/matomo/";
+		_paq.push(['setTrackerUrl', u+'matomo.php']);
+		_paq.push(['setSiteId', '4']);
+		var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+		g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+	  })();
+	</script>
+	<!-- End Matomo Code -->
+
+</head>
+<body>
+    <div class="container">
+        <h1>🚧 Site Under Maintenance 🚧</h1>
+        <p>We're sorry for the inconvenience! We're performing some necessary maintenance and updates to improve your experience.</p>
+
+        <div class="gif-placeholder">
+            <img src="/img/under-construction.gif" alt="Maintenance in Progress Animation">
+        </div>
+
+        <p>We expect to be back online very soon. Please check back in a little while!</p>
+        <p>Thank you for your patience.</p>
+    </div>
+
+    <footer>
+        &copy; <span id="current-year"></span> Apex IS Strategy
+    </footer>
+	
+	<script>
+        // 1. Get the current year
+        const year = new Date().getFullYear();
+
+        // 2. Target the HTML element by its ID
+        const yearElement = document.getElementById('current-year');
+
+        // 3. Check if the element exists and then insert the year
+        if (yearElement) {
+            yearElement.textContent = year;
+        }
+    </script>
+</body>
+</html>
